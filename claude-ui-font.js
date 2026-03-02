@@ -30,14 +30,15 @@ GM_addStyle(`
     background-color: rgba(0,0,0,0.08) !important;
   }
 
-  /* Syntax highlighting */
-  .hljs-keyword, .hljs-selector-tag, .hljs-built_in { color: #c792ea !important; }
-  .hljs-string, .hljs-attr, .hljs-addition { color: #c3e88d !important; }
-  .hljs-comment, .hljs-quote { color: #546e7a !important; font-style: italic !important; }
-  .hljs-number, .hljs-literal { color: #f78c6c !important; }
-  .hljs-title, .hljs-section { color: #82aaff !important; }
-  .hljs-type, .hljs-class { color: #ffcb6b !important; }
-  .hljs-variable, .hljs-template-variable { color: #f07178 !important; }
-  .hljs-tag, .hljs-name { color: #f07178 !important; }
-  .hljs-meta { color: #89ddff !important; }
+  /* Syntax highlighting - Claude uses Prism.js token classes */
+  .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #546e7a !important; font-style: italic !important; }
+  .token.keyword, .token.selector { color: #c792ea !important; }
+  .token.string, .token.attr-value { color: #c3e88d !important; }
+  .token.number, .token.boolean { color: #f78c6c !important; }
+  .token.function { color: #fbad60 !important; }
+  .token.operator, .token.punctuation { color: #d3d7de !important; }
+  .token.class-name, .token.builtin { color: #ffcb6b !important; }
+  .token.variable { color: #f07178 !important; }
+  .token.tag { color: #f07178 !important; }
+  .token.attr-name { color: #89ddff !important; }
 `);
